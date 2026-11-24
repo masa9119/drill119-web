@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#102A43">
-  <meta name="description" content="行動版 119 模擬報案訓練工具，隨機產生案件並提供互動對話與講評。">
+  <meta name="description" content="119 模擬報案人員讀稿工具，28 個情境隨機抽取，完整通話稿直接列出。">
   <title>119 情境演練室</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./scenarios.js"></script>
-  <script src="./app-v2.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=20261124-reader1">
+  <script src="./scenarios.js?v=20261124-reader1"></script>
+  <script src="./app-v2.js?v=20261124-reader1" defer></script>
 </head>
 <body>
   <header class="app-header">
     <a class="brand" href="#" aria-label="回到首頁">
       <span class="brand-mark" aria-hidden="true">119</span>
-      <span><b>情境演練室</b><small>CASE CALL LAB</small></span>
+      <span><b>報案情境讀稿</b><small>CALLER SCRIPT</small></span>
     </a>
     <button class="icon-button" id="openHelp" type="button" aria-label="使用說明">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.4 2.4 0 1 1 3.5 2.1c-.8.4-1.2.9-1.2 1.9M12 17h.01"/></svg>
@@ -38,13 +38,13 @@
   <dialog id="helpDialog" class="modal">
     <form method="dialog">
       <div class="modal-head"><span class="eyebrow">使用說明</span><button class="close-button" aria-label="關閉">×</button></div>
-      <h2>把每一次通話，練成可靠反應</h2>
+      <h2>抽題後，完整通話稿直接看</h2>
       <ol class="steps-list">
-        <li><b>抽取案件</b><span>系統會隨機組合地點、傷況與現場危害。</span></li>
-        <li><b>完成對話</b><span>閱讀報案者訊息，選擇最合適的回應。</span></li>
-        <li><b>查看講評</b><span>對照完整逐字稿、隱藏情資與應核事項。</span></li>
+        <li><b>隨機抽一題</b><span>從 28 個情境抽取，可無限換題。</span></li>
+        <li><b>先讀開場白</b><span>熟悉地址與現場狀況，再開始模擬報案。</span></li>
+        <li><b>依照追問應答</b><span>完整對話一次列出；綠底是報案人的台詞。</span></li>
       </ol>
-      <p class="notice-box">本工具僅供教育演練，所有姓名、地址與案件均為虛構；不取代正式勤務規範。</p>
+      <p class="notice-box">僅供演練。姓名、聯絡方式與未定場址，請依當次演練設定提供。</p>
       <button class="primary-button full" value="close">了解，開始演練</button>
     </form>
   </dialog>

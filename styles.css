@@ -178,3 +178,35 @@ h3 { margin-bottom: 8px; font-size: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
+
+/* Caller reading view: the entire script stays visible during a call. */
+.reader-intro { display:flex; flex-wrap:wrap; gap:8px 16px; margin:18px 4px; color:var(--teal); font-size:.875rem; font-weight:700; }
+.reader-toolbar { position:sticky; top:68px; z-index:15; display:flex; align-items:center; justify-content:space-between; gap:8px; margin:-10px -4px 15px; padding:10px 4px; background:rgba(244,247,248,.98); }
+.reader-toolbar .primary-button { min-height:44px; padding:8px 15px; }
+.case-title { max-width:none; margin-bottom:12px; font-size:1.65rem; line-height:1.45; }
+.case-brief-top p { margin:0; color:#d7e5ed; font-size:1rem; }
+.case-facts { margin:0; padding:7px 18px; }
+.case-facts > div { padding:12px 0; border-bottom:1px solid var(--line); }
+.case-facts > div:last-child { border-bottom:0; }
+.case-facts dt { color:var(--teal); font-size:.875rem; font-weight:800; margin-bottom:4px; }
+.case-facts dd { margin:0; font-size:1rem; line-height:1.75; }
+.opening-card { padding:21px; margin:20px 0; border:1px solid #92cfc4; border-left:5px solid var(--teal); border-radius:16px; background:var(--teal-soft); }
+.opening-card p { margin:0; color:#084f4b; font-size:1.375rem; font-weight:800; line-height:1.8; }
+.script-note { color:var(--muted); font-size:.94rem; line-height:1.7; }
+.script-list { display:grid; gap:8px; }
+.script-line { padding:15px 17px; border-radius:14px; border:1px solid var(--line); overflow-wrap:anywhere; }
+.script-line .speaker { display:block; margin-bottom:5px; font-size:.875rem; font-weight:800; }
+.script-line p { margin:0; line-height:1.85; }
+.operator-line { background:#fff; color:#536775; }
+.operator-line p { font-size:1rem; }
+.caller-line { margin-bottom:12px; color:#124f49; background:#e0f3ed; border-color:#b0d8cb; border-left:4px solid var(--teal); }
+.caller-line .speaker { color:var(--teal); }
+.caller-line p { font-size:1.25rem; font-weight:750; }
+.teacher-notes { margin-top:22px; }
+.reader-end { margin:24px 0 10px; text-align:center; color:var(--muted); font-size:.875rem; }
+.recent-case { display:flex; align-items:center; gap:12px; width:100%; color:var(--ink); text-align:left; cursor:pointer; }
+.recent-case > span:nth-child(2) { flex:1; min-width:0; }
+.recent-case b { display:block; font-size:1rem; }
+.recent-case small { display:block; margin-top:5px; font-size:.875rem; }
+.read-link { color:var(--teal); font-size:.875rem; font-weight:800; }
+@media (max-width:420px) { .recent-case { padding:15px 12px; gap:8px; } .recent-case .tag { padding:4px 7px; } }
